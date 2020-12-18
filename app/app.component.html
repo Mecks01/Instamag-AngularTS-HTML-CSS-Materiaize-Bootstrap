@@ -1,0 +1,29 @@
+
+<div>
+  <button *ngIf="isSelected==false" style="margin-left: 20%;margin-top: 2%;" type="button" class="btn btn-primary" (click)="refresh()">Go back</button>
+  <h1 style="margin-left: 80%;">My Instamag (ESIIA 5 No 15)</h1>
+</div>
+
+<div  class="row">
+  
+  <div *ngIf="isSelected">
+    <a (click)="showMySelf()" style="padding-left: 20%;" href="#"><img height="450px" width="30%"src="assets/images/MySelf.jpg"></a>
+    <a (click)="showCountry()" style="padding-left: 1%;" href="#"><img height="450px" width="30%" src="assets/images/travel.jpg"></a>  
+  </div>
+    <div  class="carousel carousel-slider" >
+      <a *ngFor="let item of dataMyself ; index as i " class="carousel-item" href="#">
+        <img src={{item}}/>
+      </a>
+    </div>
+    <div  class="carousel carousel-slider" >
+      <a *ngFor="let item of dataCountry ; index as i " class="carousel-item" href="#">
+        <img src={{item}}/>
+      </a>
+    </div>
+</div>
+<!--  carousel -->
+
+
+
+
+

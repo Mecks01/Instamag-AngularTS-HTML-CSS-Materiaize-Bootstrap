@@ -1,0 +1,30 @@
+@import "./assets/materialize/css/materialize.min.css";
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("assets/images/background.jpg");
+    background-color: #cccccc;
+   }
+
+.carousel .carousel-item {
+    width:450px !important;
+    height:400px !important;
+}
+h1{
+    color:white ;
+    text-decoration: underline;
+    font-family: 'Brush Script MT', cursive;
+}
+div {margin: 0 auto}
+
+img {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .8s ease-in-out;  
+    }
+
+    img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
